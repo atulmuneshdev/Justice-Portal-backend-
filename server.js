@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = setupSocket(server);
 setIO(io);
 
-const Port = process.env.PORT || 3420;
+const Port = process.env.PORT ;
 
 server.listen(Port, () => {
     console.log(`Server running on port ${Port}`);
