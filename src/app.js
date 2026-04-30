@@ -27,7 +27,7 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://justice-portal-frontend.vercel.app/", // or your frontend URL
+  origin: "https://justice-portal-frontend.vercel.app", // or your frontend URL
   credentials: true
 
 }));
