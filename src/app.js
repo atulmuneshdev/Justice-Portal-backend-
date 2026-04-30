@@ -27,8 +27,9 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors({
-  origin: "*", // or your frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"]
+  origin: "https://justice-portal-frontend.vercel.app/", // or your frontend URL
+  credentials: true
+
 }));
 app.use(cookieParser());
 app.use(express.json());
